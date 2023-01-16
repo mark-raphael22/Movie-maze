@@ -15,12 +15,12 @@ export default function Heropages({data, error, loading}) {
       current.scrollLeft += 1000;
     }
   };
-  const findMovie = data.filter((accessContent)=> accessContent.type === 'Reality')
+  const findMovie = data.filter((accessContent)=> accessContent.type === 'Animation')
 
-  return (
+  return ( 
     <Container>
       <div className=" container-lg mt-5 py-3 text-uppercase">
-        <h2 className="fw-2">TV SHOWS</h2>
+        <h2 className="fw-bolder text dark ">TV SHOWS</h2>
       </div>
       <div className="container-lg mx-auto mt-5 align-items-center">
         <Link to="tv shows" target="_Blank" className="fw-2 text-dark">
@@ -28,7 +28,7 @@ export default function Heropages({data, error, loading}) {
         </Link>
         <div className='position-relative'>
             <div ref={scrollRef} className='d-flex Hero'>
-                {loading && <Spinner/>}
+                {loading && <Spinner className='d-flex align-items-center vh-100'/>}
                 {error || (findMovie &&(
 
                 <>
@@ -36,7 +36,8 @@ export default function Heropages({data, error, loading}) {
                 {findMovie.map((realitytv)=> (
                 <MediaCard key={realitytv.id} {...realitytv} data={data} error={error}loading={loading}/>
                 ))}           
-                </>))}
+                </>
+                  ))}
             </div>
             <div className="d-none d-md-flex align-items-center justify-content-between w-100 position-absolute top-50">
             <IoMdArrowDropleftCircle className="text-white" size='3.2rem' style={{cursor:'pointer'}} onClick={()=>scroll('left')}/>

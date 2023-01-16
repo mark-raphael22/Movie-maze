@@ -11,9 +11,7 @@ export default function Home() {
   return (
     <>
         <HeroProduct/>
-        <div className=' px-5 mx-4 fw-bold flex-grow-1 mt-5 d-none d-md-flex'>
-            <h1>TV SHOWS</h1>
-        </div>
+       
         <Heropages data={data}error={error}loading={loading}/>
         <HeroTop  data={data}error={error}loading={loading}/>
     </>

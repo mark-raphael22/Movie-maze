@@ -10,7 +10,7 @@ export default function MediaCard(
     <Link to={`/tvshows/${id}`}>
       <div
         className="me-4  MediaCard position-relative border-bottom-0 rounded-bottom  toor"
-        style={{ width: "20vw", height: "350px " }}
+        style={{ width: "260px", height: "350px " }}
       >
         {loading && <Spinner />}
         {error && <p className="text-center">{error.message}</p>}

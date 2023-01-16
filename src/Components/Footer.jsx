@@ -8,21 +8,21 @@ import {AiOutlineCopyright} from 'react-icons/ai'
 
 
 
-
 export default function Footer() {
   return (
-    <Container className='mx-auto mt-5 py-5 logos bg-white'>
+    <Container className='mx-auto mt-5 py-5 px-2 logos 'style={{backgroundColor:' #f1f5f9'}}>
             <div className=''>
-                <div className='d-md-flex mx-5 mt-4 py-3 gap-3 icons' style={{ }}>
-                  <h3 className=''style={{}}><a href='https://facebook.com'><FaFacebookF/></a></h3>
+                <div className=' d-flex mx-1 mt-3 gap-2 icons mb-6' style={{ }}>
+                   
+                   
+                  <h3 style={{color:''}}><a href='https://facebook.com'><FaFacebookF/></a></h3>
                   <h3><a href='https://twitter.com'><BsTwitter/></a></h3>
                   <h3><a href='https://instagram.com'><FaInstagramSquare/></a></h3>
-                  <h3><a href='https://pinterest.com'><FaPinterestSquare/></a></h3>
-                </div>
-                <div className=' mx-5 d-flex justify-content-between mt-3 align-self-center'>
-                    <h5><AiOutlineCopyright/>Tvmaze.com</h5>
-                    <div className=' d-md-flex gap-3 text-uppercase '>
-                        
+                  <h3><a href='https://pinterest.com'><FaPinterestSquare/></a></h3> 
+                           </div>
+                <div className=' mx-2 d-md-flex justify-content-between   '>
+                    <h5 className='d-md mb-4'><AiOutlineCopyright/>Tvmaze.com</h5>
+                    <div className=' d-md-flex justify-content-start  align-items-start gap-3  text-uppercase  '>
                         <p>cookies settings</p>
                         <p>privacy policy</p> 
                         <p>return</p>
